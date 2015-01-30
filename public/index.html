@@ -47,7 +47,7 @@
     <!-- <link id="color-css" rel="stylesheet" href="css/colors/green.css"> -->
     <!-- <link id="color-css" rel="stylesheet" href="css/colors/turquoise.css"> -->
     <!-- <link id="color-css" rel="stylesheet" href="css/colors/blue.css"> -->
-    
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
   </head>
 
   <body class="enable-animations enable-preloader">
@@ -272,6 +272,264 @@
 
       </section>
 
+        <!-- ==============================================
+      PORTFOLIO
+      =============================================== -->
+      <section id="portfolio" class="add-padding">
+      
+        <div class="container">
+          
+          <h2 class="section-heading text-center" style="color: #fff;">Наши работы</h2>
+          
+          <!--==== Portfolio Filters ====-->
+          <div id="filter-works">
+            <ul>
+              <li class="active scrollimation fade-right d1">
+                <a href="#" data-filter="*">All</a>
+              </li>
+              <li class="scrollimation fade-right">
+                <a href="#" data-filter=".identity">Identity</a>
+              </li>
+              <li class="scrollimation fade-left">
+                <a href="#" data-filter=".logo">Logo</a>
+              </li>
+              <li class="scrollimation fade-left d1">
+                <a href="#" data-filter=".illustration">Illustration</a>
+              </li>
+            </ul>
+          </div><!--End portfolio filters -->
+          
+          <!--==== Project Preview ====-->
+          <div id="project-preview">
+          
+            <span class="close-preview">&times;</span>
+          
+            <div id="project-slider" class="flexslider"></div>
+            
+            <h1 id="project-title"></h1>
+          
+            <div id="project-content"></div>
+          
+          </div><!--Project Preview -->
+          
+        </div>
+      
+        <div class="container masonry-wrapper">
+        
+          <div id="projects-container">
+          
+            <!-- ==============================================
+            SINGLE PROJECT ITEM
+            =============================================== --> 
+            <article class="project-item illustration">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-1.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Designer World</h2><!--Project Title -->
+                <p>illustration</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-10.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-11.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>
+              
+              </div>
+              
+            </article>
+            <!-- ==============================================
+            END PROJECT ITEM
+            =============================================== -->           
+            
+            <article class="project-item identity logo">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-2.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Squirrel</h2><!--Project Title -->
+                <p>identity / logo</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-3.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-1.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-2.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-right"><a class="btn btn-color1" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribbble</a></p>
+                
+              </div>
+              
+            </article><!--End Project Item -->
+
+            <article class="project-item illustration">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-3.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Radio Tape</h2><!--Project Title -->
+                <p>illustration</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-12.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-7.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                
+              </div>
+              
+            </article><!--End Project Item -->
+
+            <article class="project-item identity">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-4.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Austin Texas</h2><!--Project Title -->
+                <p>identity</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-5.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-6.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-right"><a class="btn btn-color1" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribbble</a></p>
+              </div>
+              
+            </article><!--End Project Item -->
+
+            <article class="project-item logo">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-5.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Red Glove</h2><!--Project Title -->
+                <p>logo</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-10.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-11.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                
+              </div>
+              
+            </article><!--End Project Item -->
+
+            <article class="project-item logo">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-6.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Checklist</h2><!--Project Title -->
+                <p>logo</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-3.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-1.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-2.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>
+              </div>
+              
+            </article><!--End Project Item -->
+            
+            <article class="project-item identity logo">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-7.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Music City</h2><!--Project Title -->
+                <p>identity / logo</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-12.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-7.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-right"><a class="btn btn-color1" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribbble</a></p>
+              </div>
+              
+            </article><!--End Project Item -->
+
+            <article class="project-item illustration logo">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-8.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Black Rock</h2><!--Project Title -->
+                <p>illustration / logo</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-5.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-6.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>
+              </div>
+              
+            </article><!--End Project Item -->
+
+            <article class="project-item illustration identity">
+              
+              <img class="img-responsive project-image" src="http://demos.q-themes.net/graphista/assets/images/projects/thumb-14.jpg"  alt=""><!--Project thumb -->
+              
+              <div class="hover-mask">
+                <h2 class="project-title">Coyote</h2><!--Project Title -->
+                <p>illustration / identity</p><!--Project Subtitle -->
+              </div>
+              
+              <!--==== Project Preview HTML ====-->
+              
+              <div class="sr-only project-description" data-images="http://demos.q-themes.net/graphista/assets/images/projects/full-10.jpg,http://demos.q-themes.net/graphista/assets/images/projects/full-11.jpg" >
+              
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>
+              </div>
+              
+            </article><!--End Project Item -->  
+          </div><!-- End projects --> 
+          
+        </div><!-- End container --> 
+        
+      
+      </section>
+
       <!-- BENEFITS
       ================================= -->
       <section id="benefits" class="benefits-section section-gray section">
@@ -467,33 +725,6 @@
 
         </div>
 
-      </section>
-
-      <!-- VIDEO SECTION
-      ================================= -->
-      <section id="video" class="video-section section-gray section">
-
-        <div class="container">
-
-          <h2 class="section-heading text-center">Watch the Video</h2>
-
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-
-              <div class="video-embed">
-
-                <!-- VIDEO EMBED FROM VIMEO -->
-                <iframe class="video-async" data-source="vimeo" data-video="115134273" data-color="f3ae73" allowfullscreen></iframe>
-                
-                <!-- VIDEO EMBED FROM YOUTUBE -->
-                <!-- <iframe class="video-async" data-source="youtube" data-video="7UAy8E3e9f8" allowfullscreen></iframe> -->
-
-              </div>
-
-            </div>
-          </div>
-
-        </div>
       </section>
 
       <!-- TEAM
@@ -836,6 +1067,9 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script src="js/jquery.flexslider.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/switcher.js"></script>
 
