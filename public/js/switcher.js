@@ -8,7 +8,7 @@
     $switcher.attr( 'id', 'demo-switcher' );
     $( 'body' ).append( $switcher );
 
-    $switcher.load( 'index.html #demo-switcher > *', function() {
+    $switcher.load( 'index.php #demo-switcher > *', function() {
 
       $( 'body' ).on( 'click', '#demo-switcher-toggle', function( e ) {
         e.preventDefault();
