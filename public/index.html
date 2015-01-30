@@ -157,29 +157,29 @@
               <div class="hero-features-right col-md-5" data-animation="fadeIn">
 
                 <!-- FORM -->
-                <form action="" method="post" id="form" class="form" role="form">
+                <form action="/feedbacks" method="post" id="contact-form" class="form" role="form">
 
-                  <h4 class="form-heading">Заполните форму. Мы свяжемся с Вами в ближайшее время!</h4>
+                  <h4 class="form-heading">Заполните форму! <br> Мы свяжемся с Вами в ближайшее время!</h4>
 
                   <div class="form-validation alert"></div>
 
                   <div class="form-group">
                     <!--  <label for="form-name">Как к Вам обращаться?</label> -->
-                    <input type="text" name="name" id="form-name" class="form-control" placeholder="Ваше имя" autocomplete="off">
+                    <input type="text" name="feedback[name]" id="form-name" class="form-control requiredField" placeholder="Ваше имя" autocomplete="off" data-error-empty="Пожалуйста введите Ваше имя">
                   </div>
 
                   <div class="form-group">
                  <!--   <label for="form-location">Куда Вам позвонить?</label>  -->
-                    <input type="text" name="name" id="form-name" class="form-control" minlength="6" maxlength="20" placeholder="Ваш номер телефона" autocomplete="off">
+                    <input type="text" name="feedback[phone]" id="form-phone" class="form-control requiredField" minlength="6" maxlength="20" placeholder="Ваш номер телефона" autocomplete="off" data-error-empty="Пожалуйста введите Ваш телефон">
                   </div>
 
                   <div class="form-group">
                 <!--    <label for="form-email">Или может написать письмо?</label>  -->
-                    <input type="email" name="email" id="form-email" class="form-control" placeholder="Ваш E-mail адрес" autocomplete="off">
+                    <input type="email" name="feedback[email]" id="form-email" class="form-control" placeholder="Ваш E-mail адрес" autocomplete="off">
                   </div>
                   
                   <div class="form-group form-group-submit">
-                    <button class="btn btn-primary btn-lg btn-block" data-loading-text="Action Button">Связаться</button>
+                    <button class="btn btn-primary btn-lg btn-block" data-error-message="Ошибка!" data-ok-message="Ваши данные отправлены!" data-sending-message="Отправка...">Отправить контакты</button>
                   </div>
                 </form>
 
