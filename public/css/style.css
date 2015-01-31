@@ -106,8 +106,12 @@ iframe {
   padding: 0;
 }
 .icon-list li {
-position: relative;
-padding: 39px 0 5px 95px;
+  position: relative;
+  padding: 39px 0 5px 95px;
+}
+.hero-list li {
+  width: 300px;
+  float: left;
 }
 .icon-list-icon {
   position: absolute;
