@@ -1622,7 +1622,7 @@ body.enable-preloader.done-preloader > .document {
 
 #filter-works ul li.active a,
 #filter-works ul li:hover a{
-  color:#509B9E;
+  color:rgba(218,100,90,0.85);
 }
 
 .masonry-wrapper{
@@ -1691,7 +1691,7 @@ body.enable-preloader.done-preloader > .document {
   height:100%;
   top:0;
   left:0;
-  background:#509B9E;
+  background:rgba(218,100,90,0.85);
   opacity: 0;
   filter:alpha(opacity=0);
   -webkit-transition:all 0.3s ease-out;
@@ -1794,10 +1794,11 @@ body.enable-preloader.done-preloader > .document {
 }
 
 #project-title{
-  margin:60px 0 30px;
+  margin: 20px 0 30px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   word-spacing: 0.15em;
+  color: white;
 }
 
 #project-preview p{
@@ -1836,11 +1837,11 @@ body.enable-preloader.done-preloader > .document {
   display:none;
 }
 
-#project-slider .flex-control-nav {width: 100%; position: absolute; bottom: -45px; text-align: center;}
+#project-slider .flex-control-nav {width: 100%; margin-top: 30px; text-align: center;}
 #project-slider .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 #project-slider .flex-control-paging li a {padding:0px; width: 16px; height: 16px; display: block; background:#fff;background: rgba(255,255,255,0.3); cursor: pointer; text-indent: -9999px; border:none; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: none; -webkit-transition:background .2s ease-out; transition:background .2s ease-out;}
 #project-slider .flex-control-paging li a:hover { background: #fff;background: rgba(255,255,255,0.6); }
-#project-slider .flex-control-paging li a.flex-active { background: #509B9E; cursor: default; }
+#project-slider .flex-control-paging li a.flex-active { background: rgba(218,100,90,0.85); cursor: default; }
 
 
 @media (max-width:991px){

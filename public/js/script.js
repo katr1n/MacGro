@@ -3,6 +3,12 @@
 
   $( document ).on( 'ready', function() {
 
+    $('.header-action-button').on('click', function(e) {
+      $('#contact-form').removeClass().addClass('tada animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+      });
+    });
+
     var drew = {
       headerFloatingHeight : 60,
     };
