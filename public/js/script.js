@@ -4,9 +4,12 @@
   $( document ).on( 'ready', function() {
 
     $('.header-action-button').on('click', function(e) {
-      $('#contact-form').removeClass().addClass('tada animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $(this).removeClass();
-      });
+      setTimeout(function() {
+
+        $('#contact-form').removeClass().addClass('tada animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $(this).removeClass();
+        });
+      }, 1500);
     });
 
     var drew = {
