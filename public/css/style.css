@@ -582,6 +582,10 @@ iframe {
   line-height: 50px;
   margin-left: 0 !important;
   padding: 12px 15px 18px;
+  font-family: 'Vast Shadow', cursive;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
 }
 .navbar-logo img {
   display: inline-block;
@@ -1487,6 +1491,10 @@ iframe {
 .footer-logo {
   margin-top: 0;
   margin-bottom: 60px;
+  font-family: 'Vast Shadow', cursive;
+  color: #b2b2b2;
+  font-size: 40px;
+  font-weight: 400;
 }
 .footer-socmed {
   font-size: 20px;
