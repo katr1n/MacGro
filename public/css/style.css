@@ -903,7 +903,7 @@ iframe {
 
 /* HERO LAYOUT: FEATURES AND FORM */
 .hero-layout-features-and-form .section-background-image {
-  background-image: url(http://design.davidrozando.com/drew-html/images/backgrounds/hero-bg--features-with-form.jpg);
+  background-image: url(/images/backgrounds/mac.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.2;
@@ -1113,7 +1113,7 @@ iframe {
  * ========================================
  */
 .numbers-section .section-background-image {
-  background-image: url(http://design.davidrozando.com/drew-html/images/backgrounds/numbers-bg.jpg);
+  background-image: url(/images/backgrounds/arb.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.2;
