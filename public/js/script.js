@@ -452,4 +452,21 @@
 
   });
 
+
+  $('.scrollimation').waypoint(function(){
+    $(this).addClass('in');
+  },{offset:'80%'});
+  
+  $('.projects-container.scrollimation').waypoint(function(){
+    var i = 1,
+    delay = [];
+    $(this).find('.project-thumb').each(function(i){
+      i++;
+      var elem = $(this);
+      delay[i] = setTimeout(function(){
+        elem.addClass('in');
+      },200*i);
+    })
+  },{offset:'70%'});
+
 })( jQuery );
