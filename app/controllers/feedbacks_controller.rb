@@ -1,6 +1,4 @@
 class FeedbacksController < ApplicationController
-  skip_before_action :verify_authenticity_token
-  
   def create
     Feedback.create feedback_params.merge(ip: request.remote_ip)
 

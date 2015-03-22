@@ -1,14 +1,370 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>MacGro</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!-- Developed by MacGro team (http://macgro.ru) -->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="ru"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>MacGro | Сайты визитки, Корпоративные сайты, Интернет магазины</title>
+    <meta name="author" content="Kate Kozlova">
+    <meta name="author" content="Damir Konkov">
+    <meta name="keywords" content="MacGro, макгро, разработка веб приложениий, разработка сайтов, сайты в пензе, сайты, создание сайтов, заказать сайт">
+    <meta name="description" content="MacGro - разработка сайтов и веб-приложений различного уровня сложности">
+    <%= csrf_meta_tags %>
 
-<%= yield %>
+    <link rel="icon" href="/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/favicons/57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/144.png">
 
-</body>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Vast+Shadow">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors/red.css">
+
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+  </head>
+
+  <body class="enable-animations enable-preloader">
+    <div id="document" class="document">
+      <header id="header" class="header-section section section-dark navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header navbar-left">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-logo navbar-brand anchor-link" href="#hero">
+              MacGro
+            </a>
+          </div>
+          <nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
+            <ul id="header-nav" class="nav navbar-nav">
+              <li><a href="#hero" class="hidden">Top</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#portfolio">Наши работы</a></li>
+              <li><a href="#how-it-works">Как мы работаем</a></li>
+              <li><a href="#pricing">Цены</a></li>
+              <li class="header-action-button"><a href="#hero" class="btn btn-primary">Связаться с нами</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section id="hero" class="hero-section hero-layout-classic hero-layout-features-and-form section section-dark">
+        <div class="section-background">
+          <div class="section-background-image parallax-background" data-stellar-background-ratio="0.4"></div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-heading row" data-animation="fadeIn">
+              <div class="col-md-10 col-md-offset-1">
+                <h1 class="hero-title">Вам нужен сайт?</h1>
+                <p class="hero-tagline">Доверьте это нам!</p>
+              </div>
+            </div>
+            <div class="hero-features row">
+              <div class="hero-features-left col-md-7">
+                <p class="lead">
+                  Мы занимаемся разработкой различных видов сайтов.<br>
+                  Мы сделаем сайт Вашей мечты!<br><br>
+                  Мы разрабатываем следующие виды сайтов:
+                </p>
+                <ul class="icon-list hero-list">
+                  <li>
+                    <span class="icon-list-icon fa fa-hand-o-up" data-animation="bounceIn"></span>
+                    <h4 class="icon-list-title">Сайт-визитка</h4>
+                  </li>
+                  <li>
+                    <span class="icon-list-icon fa fa-shopping-cart" data-animation="bounceIn"></span>
+                    <h4 class="icon-list-title">Интернет-магазин</h4>
+                  </li>
+                  <li>
+                    <span class="icon-list-icon fa fa-users" data-animation="bounceIn"></span>
+                    <h4 class="icon-list-title">Корпоративный сайт</h4>
+                  </li>
+                  <li>
+                    <span class="icon-list-icon fa fa-bullhorn" data-animation="bounceIn"></span>
+                    <h4 class="icon-list-title">Промо-сайт</h4>
+                  </li>
+                  <li>
+                    <span class="icon-list-icon fa fa-suitcase" data-animation="bounceIn"></span>
+                    <h4 class="icon-list-title">Представительский сайт</h4>
+                  </li>
+                  <li>
+                    <span class="icon-list-icon fa fa-gears" data-animation="bounceIn"></span>
+                    <h4 class="icon-list-title">Индивидуальный проект</h4>
+                  </li>
+                </ul>
+              </div>
+              <div class="hero-features-right col-md-5" data-animation="fadeIn">
+                <%= form_for Feedback.new, html: { id: 'contact-form', class: 'form', role: 'form' } do %>
+                  <h4 class="form-heading">Заполните форму! <br> Мы свяжемся с Вами в ближайшее время!</h4>
+                  <div class="form-validation alert"></div>
+                  <div class="form-group">
+                    <input type="text" name="feedback[name]" id="form-name" class="form-control requiredField" placeholder="Ваше имя" autocomplete="off" data-error-empty="Пожалуйста введите Ваше имя">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="feedback[phone]" id="form-phone" class="form-control requiredField" minlength="6" maxlength="20" placeholder="Ваш номер телефона" autocomplete="off" data-error-empty="Пожалуйста введите Ваш телефон">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="feedback[email]" id="form-email" class="form-control" placeholder="Ваш E-mail адрес" autocomplete="off">
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <button class="btn btn-primary btn-lg btn-block" data-error-message="Ошибка!" data-ok-message="Ваши данные отправлены!" data-sending-message="Отправка...">Отправить контакты</button>
+                  </div>
+                <% end %>
+                <!--<form action="/feedbacks" method="post" id="contact-form" class="form" role="form">
+                  <h4 class="form-heading">Заполните форму! <br> Мы свяжемся с Вами в ближайшее время!</h4>
+                  <div class="form-validation alert"></div>
+                  <div class="form-group">
+                    <input type="text" name="feedback[name]" id="form-name" class="form-control requiredField" placeholder="Ваше имя" autocomplete="off" data-error-empty="Пожалуйста введите Ваше имя">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="feedback[phone]" id="form-phone" class="form-control requiredField" minlength="6" maxlength="20" placeholder="Ваш номер телефона" autocomplete="off" data-error-empty="Пожалуйста введите Ваш телефон">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="feedback[email]" id="form-email" class="form-control" placeholder="Ваш E-mail адрес" autocomplete="off">
+                  </div>
+                  <div class="form-group form-group-submit">
+                    <button class="btn btn-primary btn-lg btn-block" data-error-message="Ошибка!" data-ok-message="Ваши данные отправлены!" data-sending-message="Отправка...">Отправить контакты</button>
+                  </div>
+                </form>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section section">
+        <div class="container">
+          <h2 class="section-heading text-center">Что мы делаем</h2>
+          <div class="about-row row">
+            <div class="about-image col-md-6" data-animation="fadeIn">
+              <img src="images/online.jpg" alt="Description Image">
+            </div>
+            <div class="about-text col-md-6">
+              <p class="lead">Мы создаём различные веб-сайты и приложения, которые нравятся Вашим клиентам, подчеркивают Ваш фирменный стиль, и приносят Вам прибыль!</p>
+              <ul class="icon-list">
+                <li>
+                  <span class="icon-list-icon fa fa-hand-o-up" data-animation="bounceIn"></span>
+                  <h4 class="icon-list-title">Сайт-визитка</h4>
+                  <p>Самые общие данные о владельце сайта (вид деятельности, история, прайс-лист, контактные данные, реквизиты, схема проезда). Некая визитная карточка.</p>
+                </li>
+                <li>
+                  <span class="icon-list-icon fa fa-shopping-cart" data-animation="bounceIn"></span>
+                  <h4 class="icon-list-title">Интернет-магазин</h4>
+                  <p>Веб-сайт с каталогом продукции, с помощью которого клиент может заказать нужные ему товары. Здесь используются различные системы расчётов: от пересылки товаров наложенным платежом или автоматической пересылки счета по факсу до расчётов с помощью пластиковых карт.</p>
+                </li>
+                <li>
+                  <span class="icon-list-icon fa fa-users" data-animation="bounceIn"></span>
+                  <h4 class="icon-list-title">Корпоративный сайт</h4>
+                  <p>Сайта-визитка, который содержит поиски и фильтры, календари событий, фотогалереи, корпоративные блоги, форумы.</p>
+                </li>
+                <li>
+                  <span class="icon-list-icon fa fa-bullhorn" data-animation="bounceIn"></span>
+                  <h4 class="icon-list-title">Промо-сайт</h4>
+                  <p>Информационный ресурс о конкретной торговой марке или продукте, на таких сайтах размещается исчерпывающая информация о бренде, различных рекламных акциях (конкурсы, викторины, игры и т.п.).</p>
+                </li>
+                <li>
+                  <span class="icon-list-icon fa fa-suitcase" data-animation="bounceIn"></span>
+                  <h4 class="icon-list-title">Представительский сайт</h4>
+                  <p>Сайт-визитку с расширенной функциональностью: описание услуг, портфолио, отзывы, форма обратной связи и т. д..</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="add-padding">
+        <div class="container">
+          <h2 class="section-heading text-center" style="color: #fff;">Наши работы</h2>
+           <div id="filter-works">
+          </div>
+          <div id="project-preview">
+            <span class="close-preview">&times;</span>
+            <div id="project-slider" class="flexslider"></div>
+            <h1 id="project-title"></h1>
+            <div id="project-content"></div>
+          </div>
+        </div>
+        <div class="container masonry-wrapper">
+          <div id="projects-container">
+            <article class="project-item">
+              <img class="img-responsive project-image" src="/images/projects/uslugin/thumb.jpg"  alt="">
+              <div class="hover-mask">
+                <h2 class="project-title">USLUGIN.RU</h2>
+                <p>База фотографов, операторов, ведущих</p>
+              </div>
+              <div class="sr-only project-description" data-images="/images/projects/uslugin/1.jpg,/images/projects/uslugin/2.jpg" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-center"><a class="btn btn-lg btn-primary" href="http://uslugin.ru">Посмотреть&nbsp;<i class="fa fa-arrow-right"></i></a></p>
+              </div>
+            </article>
+            <article class="project-item">
+              <img class="img-responsive project-image" src="/images/projects/uslugin/thumb.jpg"  alt="">
+              <div class="hover-mask">
+                <h2 class="project-title">Дама Негодует!</h2>
+                <p>Генератор женских обид</p>
+              </div>
+              <div class="sr-only project-description" data-images="/images/projects/uslugin/1.jpg,/images/projects/uslugin/2.jpg" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="text-center"><a class="btn btn-lg btn-primary" href="http://uslugin.ru">Посмотреть&nbsp;<i class="fa fa-arrow-right"></i></a></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="how-it-works-section section">
+        <div class="container">
+          <h2 class="section-heading text-center">Как мы работаем</h2>
+          <div class="process-box scrollimation">
+            <ul class="process-list">
+              <li>
+                <p class="icon"><i class="fa fa-search fa-fw"></i></p>
+                <h4>Анализируем и исследуем</h4>
+              </li>
+              <li>
+                <p class="icon"><i class="fa fa-pencil fa-fw"></i></p>
+                <h4>Согласовываем дизайн</h4>
+              </li>
+              <li>
+                <p class="icon"><i class="fa fa-code fa-fw"></i></p>
+                <h4>Пишем программный код</h4>
+              </li>
+              <li>
+                <p class="icon"><i class="fa fa-cogs fa-fw"></i></p>
+                <h4>Тестируем</h4>
+              </li>
+              <li class="colored">
+                <p class="icon"><i class="fa fa-globe fa-fw"></i></p>
+                <h4>Размещаем в интернете</h4>
+              </li>
+            </ul>
+            <div class="process-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing-section section section-gray">
+        <div class="container">
+          <h2 class="section-heading text-center">Стоимость услуг</h2>
+          <div class="pricing-table row">
+            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+              <div class="pricing-package">
+                <div class="pricing-package-header">
+                  <h4 class="price-title">Визитка / Промо-сайт</h4>
+                  <div class="price">
+                    <span class="price-number">10 000</span>
+                    <span class="price-decimal">*</span>
+                    <span class="price-currency"><i class="fa fa-rub"></i></span>
+                  </div>
+                  <div class="price-description">Небольшой сайт о Вас и Вашей услуге</div>
+                </div>
+                <ul class="pricing-package-items">
+                  <li>Срок разработки 5-10 дней</li>
+                  <li>Оплата хостинга: 150 рублей / месяц</li>
+                  <li>Домен в зоне .ru или .рф бесплатно</li>
+                  <li><del>Любой другой с вашей доплатой</del></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+              <div class="pricing-package pricing-package-featured">
+                <div class="pricing-package-header">
+                  <h4 class="price-title">Корпоративный сайт</h4>
+                  <div class="price">
+                    <span class="price-number">30 000</span>
+                    <span class="price-decimal">*</span>
+                    <span class="price-currency"><i class="fa fa-rub"></i></span>
+                  </div>
+                  <div class="price-description">Всё о вашей организации! И не только!</div>
+                  <div class="price-featured">Самый Самый!</div>
+                </div>
+                <ul class="pricing-package-items">
+                  <li>Срок разработки 15-25 дней</li>
+                  <li>Домен в зоне .ru или .рф бесплатно</li>
+                  <li>Возможность подключения электронной почты<br>к домену вашей организации</li>
+                  <li>Возможность подключения<br>системы управления проектами<br>для вашей организации</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+              <div class="pricing-package">
+                <div class="pricing-package-header">
+                  <h4 class="price-title">Интернет магазин</h4>
+                  <div class="price">
+                    <span class="price-number">50 000</span>
+                    <span class="price-decimal">*</span>
+                    <span class="price-currency"><i class="fa fa-rub"></i></span>
+                  </div>
+                  <div class="price-description">Сайт для продаж в сети</div>
+                </div>
+                <ul class="pricing-package-items">
+                  <li>Срок разработки от 1 до 2 месяцев</li>
+                  <li>Домен в зоне .ru или .рф бесплатно</li>
+                  <li>Возможность подключения электронной почты к домену</li>
+                  <li>Подключение различных способов оплаты</li>
+                  <li>Создание XML-фида для Яндекс.Маркета</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+              <p>* - указана цена за базовый набор функционала.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer" class="footer-section section">
+        <div class="container">
+          <h3 class="footer-logo">
+            MacGro
+          </h3>
+          <div class="footer-socmed">
+            <a href="https://www.facebook.com/macgroco" target="_blank"><span class="fa fa-facebook"></span></a>
+            <a href="https://twitter.com/MacGroCo" target="_blank"><span class="fa fa-twitter"></span></a>
+            <a href="http://instagram.com/macgroco" target="_blank"><span class="fa fa-instagram"></span></a>
+            <a href="http://vk.com/macgroco" target="_blank"><span class="fa fa-vk"></span></a>
+          </div>
+          <div class="footer-copyright">
+            &copy; 2015 MacGro
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/respimage.min.js"></script>
+    <script src="js/jpreloader.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.min.js"></script>
+    <script src="js/jquery.nav.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script src="js/jquery.flexslider.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
